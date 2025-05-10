@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +10,17 @@
     <meta property="og:image" content="https://res.cloudinary.com/dqkncgdbv/image/upload/v1746910708/%D8%A8%D9%88%D8%B3%D8%AA_%D8%A7%D9%86%D8%B3%D8%AA%D8%AC%D8%B1%D8%A7%D9%85_%D8%A7%D8%B2%D8%B1%D9%82_%D8%AD%D8%AF%D9%8A%D8%AB_%D8%B9%D9%86_%D9%86%D8%AF%D9%88%D8%A9_%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9_zrnp81.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="ندوة تدريبية عن ألم الأعصاب السكري">
     <meta property="og:url" content="https://dr-abdelhamid.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ندوة ألم الأعصاب السكري">
-    <meta property="og:locale" content="ar_AR">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ألم الاعصاب السكري - د/عبدالحميد حمد">
     <meta name="twitter:description" content="ندوة تدريبية عن ألم الأعصاب السكري">
     <meta name="twitter:image" content="https://res.cloudinary.com/dqkncgdbv/image/upload/v1746910708/%D8%A8%D9%88%D8%B3%D8%AA_%D8%A7%D9%86%D8%B3%D8%AA%D8%AC%D8%B1%D8%A7%D9%85_%D8%A7%D8%B2%D8%B1%D9%82_%D8%AD%D8%AF%D9%8A%D8%AB_%D8%B9%D9%86_%D9%86%D8%AF%D9%88%D8%A9_%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9_zrnp81.png">
-    <meta name="twitter:image:alt" content="ندوة تدريبية عن ألم الأعصاب السكري">
+    <meta name="twitter:url" content="https://dr-abdelhamid.netlify.app/">
     <meta name="twitter:site" content="@YourTwitterHandle">
-    <meta name="twitter:creator" content="@YourPersonalHandle">
 
     <title>ألم الاعصاب السكري - د/عبدالحميد حمد</title>
     
@@ -36,77 +32,46 @@
             background-color: #f5f5f5;
             text-align: center;
         }
-        
         .container {
             max-width: 1200px;
             margin: 50px auto;
             padding: 20px;
         }
-        
-        .clickable-image-container {
-            margin: 0 auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: inline-block;
-            max-width: 100%;
-            transition: transform 0.3s ease;
-        }
-        
-        .clickable-image-container:hover {
-            transform: translateY(-5px);
-        }
-        
         .clickable-image {
             width: 100%;
-            height: auto;
             max-width: 1200px;
-            max-height: 630px;
-            display: block;
+            height: auto;
             cursor: pointer;
             border-radius: 8px;
+            transition: transform 0.3s;
         }
-        
-        .cta-button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 15px 30px;
-            background-color: #1DA1F2;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .cta-button:hover {
-            background-color: #1991DB;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        .clickable-image:hover {
+            transform: scale(1.01);
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="clickable-image-container">
-            <!-- الصورة القابلة للنقر -->
-            <a href="https://dr-abdelhamid.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <img src="https://res.cloudinary.com/dqkncgdbv/image/upload/v1746910708/%D8%A8%D9%88%D8%B3%D8%AA_%D8%A7%D9%86%D8%B3%D8%AA%D8%AC%D8%B1%D8%A7%D9%85_%D8%A7%D8%B2%D8%B1%D9%82_%D8%AD%D8%AF%D9%8A%D8%AB_%D8%B9%D9%86_%D9%86%D8%AF%D9%88%D8%A9_%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9_zrnp81.png" 
-                     alt="ندوة تدريبية عن ألم الأعصاب السكري" 
-                     class="clickable-image"
-                     width="1200" 
-                     height="630">
-            </a>
-            
-            <!-- زر إضافي للانتقال إلى الموقع -->
-            <a href="https://dr-abdelhamid.netlify.app/" 
-               class="cta-button"
-               target="_blank"
-               rel="noopener noreferrer">
-               انقر هنا للانتقال إلى الموقع
-            </a>
-        </div>
+        <!-- الصورة القابلة للنقر مع JavaScript للتحكم الدقيق -->
+        <img src="https://res.cloudinary.com/dqkncgdbv/image/upload/v1746910708/%D8%A8%D9%88%D8%B3%D8%AA_%D8%A7%D9%86%D8%B3%D8%AA%D8%AC%D8%B1%D8%A7%D9%85_%D8%A7%D8%B2%D8%B1%D9%82_%D8%AD%D8%AF%D9%8A%D8%AB_%D8%B9%D9%86_%D9%86%D8%AF%D9%88%D8%A9_%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9_zrnp81.png" 
+             class="clickable-image"
+             alt="ندوة تدريبية عن ألم الأعصاب السكري"
+             onclick="window.open('https://dr-abdelhamid.netlify.app/', '_blank')">
     </div>
+
+    <!-- Twitter Share Button -->
+    <a href="https://twitter.com/intent/tweet?url=https://dr-abdelhamid.netlify.app/&text=انضم%20إلى%20ندوة%20ألم%20الأعصاب%20السكري%20مع%20د.%20عبدالحميد%20حمد" 
+       target="_blank"
+       style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #1DA1F2; color: white; text-decoration: none; border-radius: 4px;">
+       شارك على تويتر
+    </a>
+
+    <script>
+        // حل بديل للجوالات
+        document.querySelector('.clickable-image').addEventListener('touchstart', function() {
+            window.open('https://dr-abdelhamid.netlify.app/', '_blank');
+        });
+    </script>
 </body>
 </html>
