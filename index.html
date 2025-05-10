@@ -23,7 +23,6 @@
     <meta name="twitter:description" content="ندوة تدريبية عن ألم الأعصاب السكري">
     <meta name="twitter:image" content="https://res.cloudinary.com/dqkncgdbv/image/upload/v1746910708/%D8%A8%D9%88%D8%B3%D8%AA_%D8%A7%D9%86%D8%B3%D8%AA%D8%AC%D8%B1%D8%A7%D9%85_%D8%A7%D8%B2%D8%B1%D9%82_%D8%AD%D8%AF%D9%8A%D8%AB_%D8%B9%D9%86_%D9%86%D8%AF%D9%88%D8%A9_%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9_zrnp81.png">
     <meta name="twitter:image:alt" content="ندوة تدريبية عن ألم الأعصاب السكري">
-    <!-- استبدل بمعرف تويتر الخاص بك -->
     <meta name="twitter:site" content="@YourTwitterHandle">
     <meta name="twitter:creator" content="@YourPersonalHandle">
 
@@ -44,75 +43,70 @@
             padding: 20px;
         }
         
-        .image-container {
+        .clickable-image-container {
             margin: 0 auto;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             display: inline-block;
             max-width: 100%;
+            transition: transform 0.3s ease;
         }
         
-        .image-container img {
+        .clickable-image-container:hover {
+            transform: translateY(-5px);
+        }
+        
+        .clickable-image {
             width: 100%;
             height: auto;
             max-width: 1200px;
             max-height: 630px;
             display: block;
-            border-radius: 8px;
             cursor: pointer;
+            border-radius: 8px;
         }
         
-        .twitter-share-btn {
+        .cta-button {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
+            margin-top: 25px;
+            padding: 15px 30px;
             background-color: #1DA1F2;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
             font-weight: bold;
+            font-size: 18px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .cta-button:hover {
+            background-color: #1991DB;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="image-container">
+        <div class="clickable-image-container">
             <!-- الصورة القابلة للنقر -->
             <a href="https://dr-abdelhamid.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <img src="https://res.cloudinary.com/dqkncgdbv/image/upload/v1746910708/%D8%A8%D9%88%D8%B3%D8%AA_%D8%A7%D9%86%D8%B3%D8%AA%D8%AC%D8%B1%D8%A7%D9%85_%D8%A7%D8%B2%D8%B1%D9%82_%D8%AD%D8%AF%D9%8A%D8%AB_%D8%B9%D9%86_%D9%86%D8%AF%D9%88%D8%A9_%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9_zrnp81.png" 
                      alt="ندوة تدريبية عن ألم الأعصاب السكري" 
+                     class="clickable-image"
                      width="1200" 
                      height="630">
             </a>
             
-            <!-- زر مشاركة تويتر مع إعادة توجيه -->
-            <a href="https://twitter.com/intent/tweet?url=https://dr-abdelhamid.netlify.app/&text=انضم%20إلى%20ندوة%20ألم%20الأعصاب%20السكري%20مع%20د.%20عبدالحميد%20حمد%20&hashtags=السكري,ألم_الأعصاب" 
-               class="twitter-share-btn"
+            <!-- زر إضافي للانتقال إلى الموقع -->
+            <a href="https://dr-abdelhamid.netlify.app/" 
+               class="cta-button"
                target="_blank"
-               rel="noopener noreferrer"
-               onclick="redirectAfterShare()">
-               شارك على تويتر
+               rel="noopener noreferrer">
+               انقر هنا للانتقال إلى الموقع
             </a>
         </div>
     </div>
-
-    <script>
-        // دالة لإعادة التوجيه بعد المشاركة
-        function redirectAfterShare() {
-            // يمكنك إضافة كود التتبع هنا إذا لزم الأمر
-            setTimeout(function() {
-                window.location.href = "https://dr-abdelhamid.netlify.app/";
-            }, 3000); // إعادة التوجيه بعد 3 ثواني (يمكن تعديل المدة)
-        }
-        
-        // بديل: إعادة التوجيه فور العودة من نافذة تويتر
-        window.addEventListener('blur', function() {
-            setTimeout(function() {
-                if (document.hidden) {
-                    window.location.href = "https://dr-abdelhamid.netlify.app/";
-                }
-            }, 1000);
-        });
-    </script>
 </body>
 </html>
